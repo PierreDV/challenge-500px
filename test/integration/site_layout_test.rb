@@ -5,5 +5,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get root_path
     assert_template 'photos/index'
     assert_select "a[href=?]", root_path
+    assert_select "a[href=?]", login_path
   end
 end
