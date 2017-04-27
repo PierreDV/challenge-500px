@@ -3,6 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    redirect_to root_url # Not the final implementation!
   end
 end
