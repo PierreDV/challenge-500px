@@ -15,9 +15,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Replaces ERB with 'Slim' templates and generators for rails command line tools.
 gem 'slim-rails'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+
 gem 'f00px'
+gem 'omniauth'
+gem 'omniauth-500px'
 
 group :development, :test do
   gem 'pry-rails'

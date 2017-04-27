@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'photos#index'
+  get '/auth/500px'
+  get '/auth/500px/callback', to: 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
   resources :photos
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
