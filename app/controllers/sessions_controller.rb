@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     omniauth = request.env["omniauth.auth"]
-    session[:user_token] = omniauth["credentials"]["token"] if omniauth['provider'] == '500px'
+    session[:user_credentials] = {user_id: omniauth["uid"], token: omniauth["credentials"]["token"], secret: omniauth["credentials"]["secret"]}
     redirect_to root_url # Not the final implementation!
   end
 

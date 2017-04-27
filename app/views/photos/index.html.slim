@@ -5,4 +5,5 @@
     .col-lg-3.col-md-4.col-xs-6.thumb
       div.thumbnail
         img.image-responsive src=photo["images"][0]["url"]
-        p= link_to "Like", "#", class: "btn btn-info btn-xs"
+        - if logged_in?
+          p= link_to "Like", {:controller => "photos", :action => "like", :photo_id => photo["id"], :remote => true }, {:class => "btn btn-info btn-xs" }
