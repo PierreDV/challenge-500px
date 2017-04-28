@@ -9,4 +9,4 @@
           - if photo["liked"]
             p= link_to "Liked", "#", class: "btn btn-danger btn-xs"
           - else
-            p= link_to "Like", {:controller => "photos", :action => "like", :photo_id => photo["id"], :remote => true }, {:class => "btn btn-info btn-xs" }
+            p= link_to "Like", {:controller => "photos", :action => "like", :photo_id => photo["id"], :remote => true }, {:class => "btn btn-info btn-xs", :id => "like"}
