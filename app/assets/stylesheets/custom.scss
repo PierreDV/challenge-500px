@@ -26,6 +26,9 @@ h1 {
 }
 
 /* header */
+.head {
+  font-weight: bold;
+}
 
 #logo {
   float: left;
@@ -66,6 +69,8 @@ footer {
   @include box_sizing;
 }
 
-#like {
+/* photos index */
+
+.like {
   font-weight: bold;
 }

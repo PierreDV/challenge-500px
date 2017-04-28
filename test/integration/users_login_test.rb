@@ -4,8 +4,9 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   test "Omniauth callback creates session and redirects to homepage" do
     # We first make sure that 'like' buttons are not rendering
     # on the homepage if they are not not logged in.
+    btn_class = "btn btn-info btn-xs col-xs-offset-5 col-md-offset-5 like"
     get root_path
-    assert_select "a[id=?]", "like", count: 0
+    assert_select "a[class=?]", btn_class, count: 0
 
     # We stub Omniauth's response for valid authentication, then test
     # to ensure succsefull login is creating the [:users_credentials] session,
@@ -17,6 +18,6 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_path
     follow_redirect!
     assert_template 'photos/index'
-    assert_select "a[id=?]", "like", count: 100
+    assert_select "a[class=?]", btn_class, count: 100
   end
 end
