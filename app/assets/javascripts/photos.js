@@ -3,6 +3,6 @@
 $(document).ready(function(){
   console.log("ready!");
   $(".btn-info").click(function(){
-    $(this).toggleClass("liked");
+    $(this).toggleClass("btn-info btn-danger");
   });
 });
