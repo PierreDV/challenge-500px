@@ -8,7 +8,7 @@ $(document).ready(function(){
     $(this).text(function(i, text){
         return text === "Like" ? "Liked" : "Like";
     });
-    $(this).off('click');
-    $(this).attr('href', "#");
+    $(this).off('click')
+    // $(this).attr('href', "#");
   });
 });
