@@ -4,7 +4,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   test "Omniauth callback creates session and redirects to homepage" do
     # We first make sure that 'like' buttons are not rendering
     # on the homepage if they are not not logged in.
-    btn_class = "btn btn-info btn-xs col-xs-offset-5 col-md-offset-5 like"
+    btn_class = "btn btn-info btn-xs col-xs-offset-5 col-md-offset-5 like" # This should be less brittle.
     get root_path
     assert_select "a[class=?]", btn_class, count: 0
 

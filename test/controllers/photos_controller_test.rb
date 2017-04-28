@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class PhotosControllerTest < ActionDispatch::IntegrationTest
+  # These tests assert that these routes are retruning 200 status codes
+  # They also assert that the correct title tags are being rendered
   test "should get index" do
     get photos_path
     assert_response :success

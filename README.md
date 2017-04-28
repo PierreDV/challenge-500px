@@ -1,24 +1,10 @@
-# README
+# 500px Most Popular Showcase
+### by [Peter de verteuil](https://github.com/PierreDV)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This App showcases the 100 most popular photos on [500px](https://500px.com/popular). Users can log
+into through their 500px account and like photos through the platform.
 
-Things you may want to cover:
+This Application was created with Rails 5. Using Slim as a template engine, Omniauth for authentication,
+Bootstrap for styling, JQuery for dynamic changes and Minitest for testing.  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The application is available to view [here](https://showcase-500px.herokuapp.com/) on Heroku.
