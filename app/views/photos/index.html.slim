@@ -8,6 +8,11 @@
         - if logged_in?
           - if photo["liked"]
             div
-              .btn.btn-danger.btn-xs Liked
+              #like.btn.btn-danger.btn-xs.col-xs-offset-5.col-md-offset-5 Liked
           - else
-            div= link_to "Like", {controller: "photos", action: "like", photo_id: photo["id"], remote: true }, {class: "btn btn-info btn-xs", id: "like"}
+            div= link_to "Like", { controller: "photos", 
+                                   action:     "like", 
+                                   photo_id:    photo["id"], 
+                                   remote:      true }, 
+                                 { class:      "btn btn-info btn-xs col-xs-offset-5 col-md-offset-5", 
+                                   id:         "like" }
