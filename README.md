@@ -8,3 +8,16 @@ This Application was created with Rails 5. Using Slim as a template engine, Omni
 Bootstrap for styling, JQuery for dynamic changes and Minitest for testing.  
 
 The application is available to view [here](https://showcase-500px.herokuapp.com/) on Heroku.
+
+To run the application in development or production, you need to add a 'config/five_hundred_secret.yml'
+file that mirrors the format of the example file, only with your API credentials filled in.
+To set up development environment, enter the following terminal commands in projects root directory:
+```
+bundle --without production
+bin/rails server
+```
+
+To run the application tests, enter the following terminal commands:
+```
+bin/rails test
+```
