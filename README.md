@@ -11,13 +11,13 @@ The application is available to view [here](https://showcase-500px.herokuapp.com
 
 To run the application in development or production, you need to add a 'config/five_hundred_secret.yml'
 file that mirrors the format of the example file, only with your API credentials filled in.
-To set up development environment, enter the following terminal commands in projects root directory:
+To set up th development environment, enter the following terminal commands in project's root directory:
 ```
 bundle --without production
 bin/rails server
 ```
 
-To run the application tests, enter the following terminal commands:
+To run the application tests, enter the following terminal commands in the project's root directory:
 ```
 bin/rails test
 ```
