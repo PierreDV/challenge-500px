@@ -18,7 +18,7 @@ class PhotosController < ApplicationController
     end
   end
 
-  # This code send a POST request to the 500px API liking the chosen photo.
+  # This code sends a POST request to the 500px API liking the chosen photo.
   def like
     client = F00px::Client.new
     client.token = session[:user_credentials]["token"]

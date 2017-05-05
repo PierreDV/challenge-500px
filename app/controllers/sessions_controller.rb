@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
       user_id: omniauth["uid"],
       token: omniauth["credentials"]["token"],
       secret: omniauth["credentials"]["secret"] }
-    redirect_to root_url # Not the final implementation!
+    redirect_to root_url
   end
 
   # Calls the Sessions Helper's 'log_out' method. Destroying the session,
